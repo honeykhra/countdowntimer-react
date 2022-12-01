@@ -1,0 +1,105 @@
+.app {
+  height: 100vh;
+  /* background: var(--soft-red); */
+}
+
+.stars {
+  height: 100vh;
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  background: #211a29;
+  opacity: 0.98;
+}
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+.hills {
+  z-index: -1;
+  position: absolute;
+  bottom: -3rem;
+}
+
+.heading {
+  font-size: 1.4rem;
+  letter-spacing: 0.7rem;
+  text-transform: uppercase;
+  color: var(--white);
+  margin: 7rem 3rem 3rem;
+}
+
+.countdown-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  color: var(--white);
+}
+
+.box {
+  width: 10vw;
+  padding: 1.8rem 0;
+  background: var(--dark-desaturated-blue);
+  font-size: 4rem;
+  margin-right: 1rem;
+  color: var(--soft-red);
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.dayshours {
+  margin-top: 1.5rem;
+  letter-spacing: 0.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+/* Icons */
+
+.icons {
+  position: absolute;
+  bottom: 4rem;
+  display: flex;
+}
+.icon {
+  margin-right: 2rem;
+}
+
+.bccontainer {
+}
+.box1 {
+  width: 10vw;
+  height: 22vh;
+  padding: 0;
+  background: var(--dark-desaturated-blue);
+  font-size: 4rem;
+  margin-right: 1rem;
+  color: var(--soft-red);
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: block;
+}
+.upper {
+  z-index: 1;
+  position: relative;
+  height: 11vh;
+  width: inherit;
+  background: violet;
+}
+.lower {
+  z-index: 0;
+  position: absolute;
+  height: 11vh;
+  width: inherit;
+  background: rgb(56, 26, 56);
+}
