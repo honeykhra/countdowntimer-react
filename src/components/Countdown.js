@@ -21,9 +21,21 @@ const Countdown = () => {
     remainingSeconds
   );
 
+  const [seconds1, setSeconds1] = useState(difference);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setSeconds1(remainingSeconds - 1);
+    }, 1000);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, [remainingSeconds]);
+
   return (
     <div>
-      <div className="heading">We're launching soon</div>
+      <div className="heading">We are going live in</div>
       <div className="countdown-container">
         <div className="">
           <div className="box">
@@ -57,7 +69,6 @@ const Countdown = () => {
           </div>
           <div className="dayshours">Seconds</div>
         </div>
-       
       </div>
     </div>
   );
