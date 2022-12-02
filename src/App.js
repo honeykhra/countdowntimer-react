@@ -12,7 +12,9 @@ export default function App() {
         <Countdown />
         <Icons />
       </div>
-      <img className="hills" src={bottomImg} alt="hills" />
+      <div className="hillscontainer">
+        <img className="hills" src={bottomImg} alt="hills" />
+      </div>
     </div>
   );
 }

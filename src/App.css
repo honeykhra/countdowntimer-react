@@ -20,10 +20,16 @@
   align-items: center;
   /* justify-content: center; */
 }
-.hills {
+
+.hillscontainer {
+  width: 100vw;
+  overflow: hidden;
   z-index: -1;
   position: absolute;
   bottom: -3rem;
+}
+.hills {
+  width: 100vw;
 }
 
 .heading {
@@ -91,9 +97,7 @@
   }
   .hills {
     height: 40vh;
-    width: 100vw;
-    z-index: -1;
-    position: absolute;
+    width: 250vw;
   }
 
   .heading {
