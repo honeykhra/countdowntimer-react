@@ -1,5 +1,7 @@
 .app {
   height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
   /* background: var(--soft-red); */
 }
 
@@ -34,7 +36,6 @@
 
 .countdown-container {
   display: flex;
-  flex-wrap: wrap;
   text-align: center;
   color: var(--white);
 }
@@ -69,4 +70,70 @@
 
 .icon {
   margin-right: 2rem;
+}
+
+/* Mobile design */
+@media screen and (max-width: 500px) {
+  .app {
+    max-width: 100vw;
+    overflow: hidden;
+  }
+
+  .stars {
+    width: 100vw;
+  }
+  .content {
+    width: 100vw;
+    display: flex;
+    flex-direction: colum;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  .hills {
+    height: 40vh;
+    width: 100vw;
+    z-index: -1;
+    position: absolute;
+  }
+
+  .heading {
+    text-align: center;
+    font-size: 1.6rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    color: var(--white);
+    margin: 10rem 2rem 5rem;
+  }
+
+  .countdown-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+  }
+
+  .box {
+    width: 20vw;
+    padding: 1rem 0;
+    background: var(--dark-desaturated-blue);
+    font-size: 2.5rem;
+    margin-right: 0.6rem;
+    color: var(--soft-red);
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+      rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+      rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  }
+
+  .dayshours {
+    margin-top: 1rem;
+    letter-spacing: 0.2rem;
+    font-size: 0.5rem;
+  }
+
+  /* Icons */
+  .icons {
+    bottom: 6rem;
+  }
 }
